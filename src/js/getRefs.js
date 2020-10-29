@@ -5,4 +5,3 @@ export default function getRefs() {
     form: document.querySelector(".form"),
   };
 }
-

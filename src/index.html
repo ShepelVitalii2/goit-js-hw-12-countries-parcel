@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Country Search</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="title">Try to find your favorite country here:</h1>
 
-    <form class="form">
-      <input
-        class="search js-input"
-        type="text"
-        placeholder="type country name"
-        name="input"
-      />
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Homework 10</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-    <div class="js-card-container"></div>
+<body>
+  <div class="toolbar">
+    <!-- Разметка переключателя темы -->
+    <div class="theme-switch">
+      <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+        <use href="./images/sprite.svg#sun"></use>
+      </svg>
 
-    <script src="./index.js"></script>
-  </body>
+      <div class="theme-switch__control">
+        <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle"
+          aria-label="Переключить между тёмной и светлой темой" />
+        <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle">
+        </label>
+        <div aria-hidden="true" class="theme-switch__marker"></div>
+      </div>
+
+      <svg class="theme-switch__icon" aria-label="Иконка луны">
+        <use href="./images/sprite.svg#moon"></use>
+      </svg>
+    </div>
+  </div>
+
+  <h1 class="title">Знайди свою країну</h1>
+
+
+  <label class="form__label form">
+    <input class="form__input js-input search" type="text" name="country" placeholder="Яку країну шукаємо?" />
+  </label>
+
+  <div class="js-card-container"></div>
+
+<script src="./index.js"></script>
+</body>
+
 </html>
