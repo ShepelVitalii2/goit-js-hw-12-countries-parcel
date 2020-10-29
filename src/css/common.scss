@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.5;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(125, 230, 238, 0.5),
+      rgba(255, 255, 0, 0.5)
+    ),
+    url(https://upload.wikimedia.org/wikipedia/commons/2/27/Wkipedia_blank_world_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: #9aa0a6;
+}
+
+label {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 50px;
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: rgb(100, 81, 81);
+  background-color: rgba(240, 240, 137, 0.5);
+  border-radius: 25px;
+  text-align: center;
+}
+.search {
+  display: block;
+  width: 350px;
+  height: 50px;
+  padding: 10px 50px;
+  font-size: 16px;
+  text-align: center;
+
+  border: 2px solid #9aa0a6;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: rgb(95, 90, 90);
+  cursor: text;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  text-align: center;
+
+  color: rgb(95, 83, 83);
+  display: inline-flex;
+
+  margin-top: 50px;
+}
+.card-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.card-text {
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+  margin-right: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card-text__item {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-text__language {
+  font-size: 16px;
+}
+
+//----------------------------------------
+
+.countries-list {
+  display: inline-block;
+  padding: 0px;
+}
+.countries-list__item {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #6c737a;
+}
+.countries-list__img {
+  margin-right: 10px;
+}
